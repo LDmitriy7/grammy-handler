@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "lint": "deno fmt && deno lint && deno check tests/test.ts",
+    "test": "deno run --watch -A tests/test.ts"
+  },
+  "fmt": {
+    "options": { "semiColons": false }
+  }
+}
