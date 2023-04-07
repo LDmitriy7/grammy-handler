@@ -7,7 +7,10 @@ import {
 import BaseHandlers from "./base.ts"
 
 /** CM - Command */
-class Handler<CT extends Context, CM extends string> extends BaseHandlers<CT> {
+class Handler<
+  CT extends Context,
+  CM extends string = "start",
+> extends BaseHandlers<CT> {
   protected constructorClass = Handler
 
   cmd(command: CM | "start", middleware: CommandMiddleware<CT>) {
