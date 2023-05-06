@@ -1,1 +1,1 @@
-export { Handler as default } from "./src/handler.ts"
+export { Handler } from "./src/handler.ts"
